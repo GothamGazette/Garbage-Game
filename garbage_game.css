@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+body, html {
+	width:630px;
+	height:400px;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.9em;
+	font-weight:bold;
+}
+
+
+/* BEGIN page Template 1 */
+
+#game_wholepage_1 {
+	width:630px;
+	height:400px;
+	min-height:400px;
+	border:none;
+}
+#game_central_image_1 {
+	padding:0;
+	width:630px;
+	text-align:center;
+}
+
+#game_text_content_1 {
+	padding:40px;
+	padding-top:20px;
+	padding-bottom:0;
+	width:550px;
+}
+#game_buttons_1 {
+	position:absolute;
+	top:240px;
+	left:0px;
+	width:630px;
+	margin:0;
+	padding:0;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	vertical-align:bottom;
+	z-index:10;
+}
+#next_button_1 {
+	position:absolute;
+	top:340px;
+	left:520px;
+	width:100px;
+	text-align:right;
+	z-index:20;
+}
+/* END page Template 1 */
+
+
+/* BEGIN page Template 2 */
+
+#game_wholepage_2 {
+	width:630px;
+	height:400px;
+	min-height:400px;
+	border:none;
+}
+#game_central_image_2 {
+	padding:0;
+	width:630px;
+	text-align:center;
+}
+#game_text_content_2 {
+	padding:40px;
+	padding-top:120px;
+	padding-bottom:0;
+	width:550px;
+}
+#game_buttons_2 {
+	position:absolute;
+	top:240px;
+	left:0px;
+	width:630px;
+	margin:0;
+	padding:0;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+	vertical-align:bottom;
+	z-index:10;
+}
+#next_button_2 {
+	position:absolute;
+	top:340px;
+	left:520px;
+	width:100px;
+	text-align:right;
+	z-index:20;
+}
+/* END page Template 1 */
+
+
+#dhtmltooltip {
+	position: absolute;
+	width: 400px;
+	border: 2px solid #0099CC;
+	padding:10px;
+	color:#666666;
+	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:0.7em;
+	visibility: hidden;
+	z-index: 1000;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray, direction=135);
+}
+.button_link {
+	padding-left:4px;
+	padding-right:4px;
+	text-decoration:none;
+	color:#000000;
+	font-weight:normal;
+	font-size:0.8em;
+}
+.single_button {
+	float:left;
+}
+.centered {
+	text-align:center;
+}
+.black_text {
+	color:#000000;
+}

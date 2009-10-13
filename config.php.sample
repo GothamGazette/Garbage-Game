@@ -1,0 +1,66 @@
+<?php
+//If $debug_on_screen = 'y', $_SESSION info will be displayed on screen
+$debug_on_screen = 'n';
+
+$site_name = 'Gotham Gazette - The Garbage Game';
+$site_url = "http://".$_SERVER['SERVER_NAME']."/garbage/index.php";
+
+$HEAD_meta_description = $site_name . '';
+$HEAD_meta_keywords = '';
+$HEAD_meta_copyright = "Gotham Gazette and Citizens Union Foundation";
+
+$adminemail = 'you@example.com';
+
+$db_host = 'localhost';
+$db_user = '';
+$db_password = '';
+$db_name = '';
+
+// To not reshow buttons on a screen after they have been clicked once, set to 1
+// To always show all buttons, set to 0
+$hide_button_after_clicking = 0;
+
+// Database tables
+$table_screen_text = 'text_input';
+$table_images_buttons = 'images_buttons';
+$table_images_central = 'images_central';
+
+// Cost calculation variables
+$cost_ton_recovery_facility = 141.62;
+$cost_ton_landfill = 167;
+$cost_ton_sorted = 206;
+$cost_ton_w2e = 152;
+
+$rail_capacity = 90;
+$barge_capacity = 1056;
+$truck_dos_capacity = 12;
+$truck_big_capacity = 52.5;
+
+$truck_co2_per_mile_per_1k_tons = 6.26;
+$rail_co2_per_mile_per_1k_tons = 2.49;
+$barge_co2_per_mile_per_1k_tons = 1.32;
+
+// connect to db
+$db_connect = @mysql_connect ($db_host, $db_user, $db_password) OR die ('Could not connect to MySQL: ' . mysql_error() ); 
+mysql_select_db ($db_name) or die ('config - Could not select the database: ' . mysql_error() ); 
+
+// image files - URL paths relative to game script
+$rel_path_backgrounds = 'resources/backgrounds/';
+$rel_path_buttons = 'resources/buttons/';
+$rel_path_central = 'resources/central_image/';
+#$rel_path_banners = 'resources/banners/';
+$rel_path_banners = '/games/garbage_game/resources/banners/';
+$rel_path_summaries = 'resources/summaries/';
+$button_table_width = 600;	//pixel width of table contained in game_buttons_x div
+
+// banner graphic files
+$banner_green_filename = 'banner_green_space';
+$banner_landfill_filename = 'banner_landfill';
+$banner_default = 'banner_landfill';
+
+function debug_mail_and_die($error_msg) {
+	// There was a significant error.  E-mail notice.
+	mail($adminemail, 'Garbage Game Error Report', $error_msg);
+	die($error_msg);
+}
+?>

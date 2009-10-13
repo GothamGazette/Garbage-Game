@@ -1,0 +1,15 @@
+Oct 13, 2009
+
+Please read the copyright and license information before you proceed. This game was developed by Isotope Media (http://www.isotopemedia.com/) and Gotham Gazette (http://www.gothamgazette.com) to create news games. You can visit some of the games created with the code by visiting http://www.gothamgazette.com/games. Take a look at "The Garbage Glut."
+
+This code produces a sort of "choose your own adventure" game about waste management. Unfortunately, it wasn't written with re-purposing in mind.
+
+This game is database driven, and you'll need a reasonable interface to MySQL (the game has not been tested with any other database servers) to manage the game. We handled everything within PHPmyAdmin.
+
+The very easy install is this:
+* Create your database
+* Import sample.sql
+* Copy "config.php.sample" to "yourgame.php" and add your database credentials
+* Edit "gameframe.php" and "subform.php" to let them know where you're stashing your config file. 
+
+Once you're there, load "index.php" and you can tinker with the game. Keep in mind that you'll need to swap out all of the igraphics in "resources" and the text about NYC sanitation before you release the game to the public!

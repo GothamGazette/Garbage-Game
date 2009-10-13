@@ -1,0 +1,3 @@
+The Gotham Gazette Budget Game derives from copyrighted works licensed under the GNU General Public License.  This version has been modified pursuant to the GNU General Public License as of June 29, 2007, and as distributed, it includes or is derivative of works licensed under the GNU General Public License or other free or open source software licenses.  A full text version of the GNU GPL version 3 can be found in the LICENSE.txt file.
+
+All game copy and graphics are copyright Gotham Gazette and are only provided as references. They may not be re-produced or redistributed without explicit written permission from Gotham Gazette (which we may be able to provide under certain circumstances: don't hestitate to contact us!)
